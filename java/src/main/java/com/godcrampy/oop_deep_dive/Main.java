@@ -9,5 +9,9 @@ public class Main {
         System.out.println(honda.fuelLeft);
         honda.refuelTank(100);
         System.out.println(honda.fuelLeft);
+
+        System.out.println(honda.distanceTravelled);
+        honda.drive(10);
+        System.out.println(honda.distanceTravelled);
     }
 }

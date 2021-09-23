@@ -1,9 +1,9 @@
 package com.godcrampy.oop_deep_dive.vehicle;
 
 public class Car {
-    private final String name;
-    private final String color;
-    private final Integer peopleCapacity;
+    private String name;
+    private String color;
+    private Integer peopleCapacity;
     private Integer fuelLeft;
     private Integer distanceTravelled;
 
@@ -27,20 +27,20 @@ public class Car {
         return peopleCapacity;
     }
 
-    public Integer getFuelLeft() {
-        return fuelLeft;
-    }
-
     public Integer getDistanceTravelled() {
         return distanceTravelled;
     }
 
-    private void checkSystems() {
-        System.out.println("Checking Systems...");
+    public Integer getFuelLeft() {
+        return fuelLeft;
+    }
+
+    private void checkSystem() {
+        System.out.println("Checking System....");
     }
 
     public void startEngine() {
-        checkSystems();
+        checkSystem();
         System.out.println("Starting Engine!");
     }
 
